@@ -6,7 +6,7 @@ Explore my portfolio to see how I combine data, code, and curiosity to solve rea
 
 ## 👤 About Me
 I'm a data science student with a good foundation in statistics, machine learning, and data storytelling. 
-I enjoy working on end-to-end projects—from data collection and cleaning to building predictive models and visualizing results.
+I enjoy working on end-to-end projects from data collection and cleaning to building predictive models and visualizing results.
 
 ## Skills
 •	Languages: Python, SQL
