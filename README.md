@@ -44,11 +44,11 @@ GitHub Repo
 •	AWS Certified Machine Learning Specialty 2025 - Hands On! – [Udemy](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/)
 
 ### Contact
-•	Email: [Satadal](satadals121@gmail.com)
+[Email](satadals121@gmail.com)
 
-•	LinkedIn: [LinkedIn](https://www.linkedin.com/in/satadals/)
+[LinkedIn](https://www.linkedin.com/in/satadals/)
 
-•	GitHub: [Github](https://github.com/SatadalS99)
+[Github](https://github.com/SatadalS99)
 
 
 
