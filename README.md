@@ -32,9 +32,9 @@
 [streamlit_app](https://gold-price-prediction-satadal.streamlit.app/)
 
  
-- Description: The goal of this project is to build a predictive model for the Gold price using market and economic indicators.
-  Used Random Forest and Gradient Boosting to forecast future gold prices using historical data and financial indicators.
-  Using R-squared metric 99% of accuracy of prediction is achieved.
+- Description: The goal of this project is to build a predictive model for gold prices using market and economic indicators.
+  Random Forest and Gradient Boosting algorithms were used to forecast future gold prices based on historical data and financial indicators.
+  The model achieved an R-squared accuracy of 99%, indicating a high level of predictive performance.
 
 - Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
 
