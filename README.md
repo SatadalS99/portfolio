@@ -24,10 +24,16 @@
 
 ## Projects
 
-#### Gold Price Prediction 
-- Description: Used Random Forest and Gradient Boosting to forecast future gold prices using historical data and financial indicators.
+#### 1. Gold Price Prediction (End to end project)
+[streamlit](https://gold-price-prediction-satadal.streamlit.app/)
 
-- Tech Stack: Python, Pandas, Scikit-learn, Matplotlib
+[jupyter](https://github.com/SatadalS99/Gold_price_prediction/blob/main/Gold_price_prediction_using_decison_trees.ipynb)
+
+- Description: The goal of this project is to build a predictive model for the Gold price using market and economic indicators.
+  Used Random Forest and Gradient Boosting to forecast future gold prices using historical data and financial indicators.
+  Using R-squared metric 99% of accuracy of prediction is achieved.
+
+- Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
 
 - GitHub Repo 
 
@@ -37,8 +43,7 @@
   
 - AWS Certified Machine Learning Specialty 2025 - Hands On! – [Udemy](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/)
 
-### Contact
-[Email](satadals121@gmail.com)
+### Profiles
 
 [LinkedIn](https://www.linkedin.com/in/satadals/)
 
