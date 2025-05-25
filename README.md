@@ -25,10 +25,13 @@
 ## Projects
 
 #### 1. Gold Price Prediction (End to end project)
-[streamlit](https://gold-price-prediction-satadal.streamlit.app/)
+[Github_repo](https://github.com/SatadalS99/Gold_price_prediction)
 
-[jupyter](https://github.com/SatadalS99/Gold_price_prediction/blob/main/Gold_price_prediction_using_decison_trees.ipynb)
+[jupyter_notebook](https://github.com/SatadalS99/Gold_price_prediction/blob/main/Gold_price_prediction_using_decison_trees.ipynb)
 
+[streamlit_app](https://gold-price-prediction-satadal.streamlit.app/)
+
+ 
 - Description: The goal of this project is to build a predictive model for the Gold price using market and economic indicators.
   Used Random Forest and Gradient Boosting to forecast future gold prices using historical data and financial indicators.
   Using R-squared metric 99% of accuracy of prediction is achieved.
