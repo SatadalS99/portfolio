@@ -34,7 +34,7 @@
  
 - Description: The goal of this project is to build a predictive model for gold prices using market and economic indicators.
   Random Forest and Gradient Boosting algorithms were used to forecast future gold prices based on historical data and financial indicators.
-  The model achieved an R-squared accuracy of 99%, indicating a high level of predictive performance.
+  The model achieved an R-squared accuracy of 80%, indicating a high level of predictive performance.
 
 - Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
 
