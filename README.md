@@ -38,12 +38,11 @@
 
 - Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
 
-- GitHub Repo
 
 
 
 #### 2. German Trade and Economic Activity Analysis (2005–2020)
-[Github_repo]([https://github.com/SatadalS99/Gold_price_prediction](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/tree/main))
+[Github_repo](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de)
 
 [jupyter_notebook](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/blob/main/src/Economic_Activity_Analysis.ipynb)
 
@@ -54,7 +53,6 @@
 
 - Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
 
-- GitHub Repo 
 
 
 
