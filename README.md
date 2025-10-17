@@ -38,7 +38,24 @@
 
 - Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
 
+- GitHub Repo
+
+
+
+#### 2. German Trade and Economic Activity Analysis (2005–2020)
+[Github_repo]([https://github.com/SatadalS99/Gold_price_prediction](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/tree/main))
+
+[jupyter_notebook](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/blob/main/src/Economic_Activity_Analysis.ipynb)
+
+ 
+- Description: This dataset provides a comprehensive view of how German economic activity has evolved over nearly two decades and reflects the underlying strengths and
+- adaptations of the German business landscape. As a student with a passion for business and economics studying in Germany, I am eager to explore how market forces,
+- strategic decisions, and structural characteristics shape these economic trends and contribute to Germany's continued economic success.
+
+- Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
+
 - GitHub Repo 
+
 
 
 ### Certifications
