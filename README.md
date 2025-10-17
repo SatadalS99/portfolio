@@ -48,8 +48,8 @@
 
  
 - Description: This dataset provides a comprehensive view of how German economic activity has evolved over nearly two decades and reflects the underlying strengths and
-- adaptations of the German business landscape. As a student with a passion for business and economics studying in Germany, I am eager to explore how market forces,
-- strategic decisions, and structural characteristics shape these economic trends and contribute to Germany's continued economic success.
+  adaptations of the German business landscape. As a student with a passion for business and economics studying in Germany, I am eager to explore how market forces,
+  strategic decisions, and structural characteristics shape these economic trends and contribute to Germany's continued economic success.
 
 - Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
 
