@@ -51,9 +51,16 @@
   adaptations of the German business landscape. As a student with a passion for business and economics studying in Germany, I am eager to explore how market forces,
   strategic decisions, and structural characteristics shape these economic trends and contribute to Germany's continued economic success.
 
-- Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
+- Tech Stack: Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
 
 
+#### 3. Real life project participation (Omdena Project)
+[Github_repo](https://github.com/OmdenaAI/SudanChapter_AnalyzeHealthcareAccessibility)
+
+ - Description: Contributed to a real-world Omdena project analyzing healthcare accessibility in Sudan. Involved in data collection, cleaning, and exploratory data
+analysis to uncover insights and support data-driven decision-making.
+
+- Tech Stack: Python , pandas, numpy, matplotlib, seaborn.
 
 
 ### Certifications
