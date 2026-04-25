@@ -64,9 +64,12 @@ analysis to uncover insights and support data-driven decision-making.
 
 
 ### Certifications
+- AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents – [Udemy](https://www.udemy.com/certificate/UC-fa433f70-7544-4ef6-94eb-4af44aa4e370/)
+
+- AWS Certified Machine Learning Specialty 2025 - Hands On! – [Udemy](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/)
+
 - SQL & Database Design A-Z™: Learn MS SQL Server + PostgreSQL – [Udemy](https://www.udemy.com/certificate/UC-8e25770a-2c19-4d31-bd32-3bab1523ebcd/)
   
-- AWS Certified Machine Learning Specialty 2025 - Hands On! – [Udemy](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/)
 
 ### Profiles
 
