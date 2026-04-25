@@ -11,12 +11,7 @@
 
 - Other: SAP, MS-Office
 
-- Concepts:
-- Advanced Statistical Learning,
-- Statistical Learning for Big Data Analysis,
-- Applied Bayesian Data Analysis,
-- Monte Carlo Simulation,
-- Generalized Linear Model. 
+- Concepts: Advanced Statistical Learning, Statistical Learning for Big Data Analysis, Applied Bayesian Data Analysis, Monte Carlo Simulation, Generalized Linear Model. 
 
 ### Education
 
