@@ -11,11 +11,16 @@
 
 - Other: SAP, MS-Office
 
-- Concepts: Machine Learning, Big Data, Statistical Learning, Data Wrangling, Data Analysis 
+- Concepts:
+- Advanced Statistical Learning,
+- Statistical Learning for Big Data Analysis,
+- Applied Bayesian Data Analysis,
+- Monte Carlo Simulation,
+- Generalized Linear Model. 
 
 ### Education
 
-- M.Sc. in Data Science, TU Dortmund(Expected 2026)
+- M.Sc. in Data Science, TU Dortmund(Expected 2027)
 
 - Masters in Computer Application (2012)
  
