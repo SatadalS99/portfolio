@@ -72,9 +72,9 @@ analysis to uncover insights and support data-driven decision-making.
 
 
 ### Professional Experience
-Office Executive | WBSEDCL | 2013 – 2021
+- Office Executive | WBSEDCL | 2013 – 2021
 
-Online Math Tutor | 1to1 Tutor | 2010 – 2013
+- Online Math Tutor | OnetoOne Tutor India Pvt. Ltd. | 2010 – 2013
 
 
 ### Profiles
