@@ -69,10 +69,15 @@ analysis to uncover insights and support data-driven decision-making.
 - AWS Certified Machine Learning Specialty 2025 - Hands On! – [Udemy](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/)
 
 - SQL & Database Design A-Z™: Learn MS SQL Server + PostgreSQL – [Udemy](https://www.udemy.com/certificate/UC-8e25770a-2c19-4d31-bd32-3bab1523ebcd/)
-  
+
+
+### Professional Experience
+Office Executive | WBSEDCL | 2013 – 2021
+
+Online Math Tutor | 1to1 Tutor | 2010 – 2013
+
 
 ### Profiles
-
 [LinkedIn](https://www.linkedin.com/in/satadals/)
 
 [Github](https://github.com/SatadalS99)
