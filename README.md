@@ -36,8 +36,12 @@
   Random Forest and Gradient Boosting algorithms were used to forecast future gold prices based on historical data and financial indicators.
   The model achieved an R-squared accuracy of 80%, indicating a high level of predictive performance.
 
-- Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
+  
+- Conclusion: 
+  Developed a Random Forest Regressor achieving 81.4% accuracy (R2 = 0.814) to predict gold prices. Identified Silver (SLV) as the strongest predictor
+  (r = 0.87) and validated model generalization using Gradient Boosting as a benchmark.
 
+- Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
 
 
 
@@ -51,6 +55,11 @@
   adaptations of the German business landscape. As a student with a passion for business and economics studying in Germany, I am eager to explore how market forces,
   strategic decisions, and structural characteristics shape these economic trends and contribute to Germany's continued economic success.
 
+- Conclusion:
+  Analyzed 15 years of German trade data, uncovering an average profitability of 28.69%, a productivity gap of€268 (large firms) vs. €116 (micro firms) per person,
+  and a 27% net market growth since 2005 with a steady investment intensity increase of +0.026% per year.
+
+
 - Tech Stack: Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
 
 
@@ -58,7 +67,7 @@
 [Github_repo](https://github.com/OmdenaAI/SudanChapter_AnalyzeHealthcareAccessibility)
 
  - Description: Contributed to a real-world Omdena project analyzing healthcare accessibility in Sudan. Involved in data collection, cleaning, and exploratory data
-analysis to uncover insights and support data-driven decision-making.
+   analysis to uncover insights and support data-driven decision-making.
 
 - Tech Stack: Python , pandas, numpy, matplotlib, seaborn.
 
