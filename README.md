@@ -112,7 +112,7 @@ Open-source challenge building a machine learning system to forecast disease out
 
 ## Education
 
-- **M.Sc. Data Science**, TU Dortmund University — 2021–2026 (expected)
+- **M.Sc. Data Science**, TU Dortmund University — 2021–2027 (expected)
 - **Master of Computer Applications (MCA)**, West Bengal University of Technology — 2012
 - **Bachelor of Computer Applications (BCA)**, West Bengal University of Technology — 2009
 
