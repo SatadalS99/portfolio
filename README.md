@@ -62,7 +62,7 @@ Brief covered customer clustering, basket co-purchase analysis and anomaly detec
 ### 3. Portfolio Optimization with Monte Carlo Simulation
 *Final project, "On the Theory and Practice of Monte Carlo Simulations", TU Dortmund — WiSe 2025/26*
 
-[Repository](https://github.com/SatadalS99/portfolio-mc-optimization) · [Report (PDF)](https://github.com/SatadalS99/portfolio-mc-optimization/blob/main/report/report.pdf) · [Plain-language guide](https://github.com/SatadalS99/portfolio-mc-optimization/blob/main/docs/)
+[Repository](https://github.com/SatadalS99/portfolio-mc-optimization)
 
 A nine-phase simulation framework for building and stress-testing equity portfolios, using five years of daily data for seven US large-caps (2020–2024, 1,221 return observations, 80/20 chronological split). Independent work.
 
@@ -76,19 +76,12 @@ A nine-phase simulation framework for building and stress-testing equity portfol
 
 ---
 
-### 4. Healthcare Accessibility in Sudan — Omdena Sudan Chapter
-*Volunteer collaborator, Feb–Mar 2024*
+### 4. German Wholesale & Retail Trade Analysis (2005–2020)
+[Repository](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de) · [Notebook](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/blob/main/src/Economic_Activity_Analysis.ipynb)
 
-[Repository](https://github.com/OmdenaAI/SudanChapter_AnalyzeHealthcareAccessibility)
+Fifteen years of German wholesale and retail trade statistics analysed end to end, from raw ingestion through to structural findings: average sector profitability of 28.69%, a productivity gap of €268 per person (large firms) versus €116 (micro firms), and 27% net market growth since 2005 with investment intensity rising +0.026%/year.
 
-Open-source challenge building a machine learning system to forecast disease outbreaks and map healthcare facility accessibility in Sudan, where healthcare access is severely constrained by conflict and displacement.
-
-- Data collection and preprocessing of historical and geospatial health datasets — resolving missing values, reconciling inconsistent sources, and building the cleaned feature sets used downstream.
-- Exploratory analysis identifying high-risk disease trends and regional access barriers.
-- The team's logistic regression models were trained on these feature sets and deployed as an interactive web application.
-- Worked asynchronously with a distributed international team via Git/GitHub.
-
-**Tech stack:** Python, pandas, NumPy, scikit-learn, Matplotlib
+**Tech stack:** Python, pandas, NumPy, Matplotlib, Seaborn, openpyxl
 
 ---
 
@@ -101,12 +94,19 @@ End-to-end regression pipeline predicting gold prices from market and economic i
 
 ---
 
-### 6. German Wholesale & Retail Trade Analysis (2005–2020)
-[Repository](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de) · [Notebook](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/blob/main/src/Economic_Activity_Analysis.ipynb)
+### 6. Healthcare Accessibility in Sudan — Omdena Sudan Chapter
+*Volunteer collaborator, Feb–Mar 2024*
 
-Fifteen years of German wholesale and retail trade statistics analysed end to end, from raw ingestion through to structural findings: average sector profitability of 28.69%, a productivity gap of €268 per person (large firms) versus €116 (micro firms), and 27% net market growth since 2005 with investment intensity rising +0.026%/year.
+[Repository](https://github.com/OmdenaAI/SudanChapter_AnalyzeHealthcareAccessibility)
 
-**Tech stack:** Python, pandas, NumPy, Matplotlib, Seaborn, openpyxl
+Open-source challenge building a machine learning system to forecast disease outbreaks and map healthcare facility accessibility in Sudan, where healthcare access is severely constrained by conflict and displacement.
+
+- Data collection and preprocessing of historical and geospatial health datasets — resolving missing values, reconciling inconsistent sources, and building the cleaned feature sets used downstream.
+- Exploratory analysis identifying high-risk disease trends and regional access barriers.
+- The team's logistic regression models were trained on these feature sets and deployed as an interactive web application.
+- Worked asynchronously with a distributed international team via Git/GitHub.
+
+**Tech stack:** Python, pandas, NumPy, scikit-learn, Matplotlib
 
 ---
 
