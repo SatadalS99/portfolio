@@ -1,95 +1,133 @@
-# Data Science Student
+# Satadal Santra
 
-### Skills
-- Languages: Python, SQL
+**M.Sc. Data Science student at TU Dortmund** — open to Werkstudent and Praktikum roles in Data Science across NRW.
 
-- Libraries/Frameworks: Pandas, NumPy, Scikit-learn,  Matplotlib, Seaborn, Plotly
+Eight years' prior experience with SAP/ERP master data and MIS reporting at a state power utility, now applied to forecasting, clustering and simulation on real industry datasets.
 
-- Tools: Jupyter Notebook, Git, Docker, VS Code, Anaconda
+[LinkedIn](https://www.linkedin.com/in/satadals/) · satadals121@gmail.com · Bochum, Germany
 
-- Databases: MySQL, PostgreSQL
+---
 
-- Other: SAP, MS-Office
+## Skills
 
-- Concepts: Advanced Statistical Learning, Statistical Learning for Big Data Analysis, Applied Bayesian Data Analysis, Monte Carlo Simulation, Generalized Linear Model. 
+- **Languages:** Python, SQL
+- **Libraries:** pandas, NumPy, scikit-learn, statsmodels, SciPy, Matplotlib, Seaborn, Plotly, Streamlit
+- **Databases:** PostgreSQL, MySQL
+- **Tools:** Jupyter, Git, Docker, VS Code, Anaconda, SAP
+- **Methods:** time series forecasting, clustering & segmentation, anomaly detection, statistical inference, Monte Carlo simulation, hypothesis testing, cross-validation
+- **Coursework:** Advanced Statistical Learning, Statistical Learning for Big Data, Applied Bayesian Data Analysis, Monte Carlo Simulation, Generalized Linear Models
 
-### Education
-
-- M.Sc. in Data Science, TU Dortmund(Expected 2027)
-
-- Masters in Computer Application (2012)
- 
-- Bachelor in Computer Application (2009)
-
+---
 
 ## Projects
 
-#### 1. Gold Price Prediction (End to end project)
-[Github_repo](https://github.com/SatadalS99/Gold_price_prediction)
+### 1. Demand Forecasting with DHL Data
+*Team seminar project, Fakultät Statistik, TU Dortmund — Realworld Solution Summit 2026*
 
-[jupyter_notebook](https://github.com/SatadalS99/Gold_price_prediction/blob/main/Gold_price_prediction_using_decison_trees.ipynb)
+Forecasting weekly parcel volumes for capacity planning at Customer × Product × calendar-week granularity: 20 customers, 2 products, 37 active lines, 4,968 rows of weekly history (2023–2025), forecasting CW 1–16 of 2026.
 
-[streamlit_app](https://gold-price-prediction-satadal.streamlit.app/)
+**My contribution — exploratory analysis and the customer-based modelling approach.**
 
- 
-- Description: The goal of this project is to build a predictive model for gold prices using market and economic indicators.
-  Random Forest and Gradient Boosting algorithms were used to forecast future gold prices based on historical data and financial indicators.
-  The model achieved an R-squared accuracy of 80%, indicating a high level of predictive performance.
+- EDA established the modelling constraints: demand is highly skewed (mean 4.7M ≫ median 3.2M), concentrated (top 10 lines ≈ 62% of volume), and declining ≈3%/year.
+- Hypothesis testing showed the two product lines are statistically independent within a customer — robust across timescales and after multiple-testing correction — ruling out substitution effects and justifying line-by-line modelling.
+- Built individual series per customer–product combination (40 identified, 37 viable) and evaluated 14 candidate models each — naïve, seasonal, trend, Croston, ARIMA, Holt-Winters, machine learning and robust-shrinkage — for **518 total model runs**.
+- Selection used a 52-week training window with rolling time-based cross-validation over 7 folds and no look-ahead; each chosen model was validated on unseen test data before forecasting.
+- **Result:** per-line model selection cut average forecast error from 2.28 to 1.97 (**≈14% better**) than the best single global rule. Final deliverable: 592-row forecast (37 lines × 16 weeks).
 
-  
-- Conclusion: 
-  Developed a Random Forest Regressor achieving 81.4% accuracy (R2 = 0.814) to predict gold prices. Identified Silver (SLV) as the strongest predictor
-  (r = 0.87) and validated model generalization using Gradient Boosting as a benchmark.
+**Tech stack:** Python, pandas, statsmodels, scikit-learn
 
-- Tech Stack: Python, Pandas, Numpy, Scikit-learn, Matplotlib, Streamlit, Jupyter Notebook, VSCode
+> Data and code are confidential under the university/partner agreement. Poster available on request.
 
+---
 
+### 2. Customer Segmentation with Picnic Data
+*Team seminar project in cooperation with Picnic Germany, Fakultät Statistik, TU Dortmund — Realworld Solution Summit, SoSe 2026*
 
-#### 2. German Trade and Economic Activity Analysis (2005–2020)
-[Github_repo](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de)
+Brief covered customer clustering, basket co-purchase analysis and anomaly detection across 2.3M order lines, 19,314 customers and 2,000 articles.
 
-[jupyter_notebook](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/blob/main/src/Economic_Activity_Analysis.ipynb)
+**My contribution — new-customer drop-off patterns.**
 
- 
-- Description: This dataset provides a comprehensive view of how German economic activity has evolved over nearly two decades and reflects the underlying strengths and
-  adaptations of the German business landscape. As a student with a passion for business and economics studying in Germany, I am eager to explore how market forces,
-  strategic decisions, and structural characteristics shape these economic trends and contribute to Germany's continued economic success.
+- The problem: new customers joined and went quiet after one or two orders. Cohort-average weekly deliveries fell 56% from Week 1 to Week 23, but every drop-off received the same generic re-engagement email regardless of behaviour.
+- K-Means clustering (Euclidean) on a 5,722 × 23 weekly-trajectory matrix. Each customer row was **min–max normalised**, so clustering grouped by the *shape* of behaviour over time rather than order volume — without that step segments separate on how much people buy, which the business already knows, instead of on how they disengage.
+- K tested at 3, 4 and 5 against five metrics (Elbow, Silhouette, Davies-Bouldin, Calinski-Harabasz, minimum cluster size); K=3 won on four of five.
+- Three segments separated cleanly in PC1–PC2 space: **70% Never-Activated** (flat from day one), **19% Slow Builders**, **11% Peak-and-Fade** (peaked at Week 9, then declined).
+- **Result:** the Peak-and-Fade cohort are the real drop-offs, and worth **6.5× more per customer** than the Never-Activated group. Each segment has its own identifiable trigger week and appropriate response — so retention spend goes to the 11% who can be won back instead of the 70% who never engaged.
 
-- Conclusion:
-  Analyzed 15 years of German trade data, uncovering an average profitability of 28.69%, a productivity gap of€268 (large firms) vs. €116 (micro firms) per person,
-  and a 27% net market growth since 2005 with a steady investment intensity increase of +0.026% per year.
+**Tech stack:** Python, pandas, scikit-learn, PCA
 
+> Data confidential under the university/partner agreement.
 
-- Tech Stack: Python 3.8+, pandas, numpy, matplotlib, seaborn, openpyxl
+---
 
+### 3. Portfolio Optimization with Monte Carlo Simulation
+*Final project, "On the Theory and Practice of Monte Carlo Simulations", TU Dortmund — WiSe 2025/26*
 
-#### 3. Real life project participation (Omdena Project)
-[Github_repo](https://github.com/OmdenaAI/SudanChapter_AnalyzeHealthcareAccessibility)
+[Repository](https://github.com/SatadalS99/portfolio-mc-optimization) · [Report (PDF)](https://github.com/SatadalS99/portfolio-mc-optimization/blob/main/report/report.pdf) · [Plain-language guide](https://github.com/SatadalS99/portfolio-mc-optimization/blob/main/docs/)
 
- - Description: Contributed to a real-world Omdena project analyzing healthcare accessibility in Sudan. Involved in data collection, cleaning, and exploratory data
-   analysis to uncover insights and support data-driven decision-making.
+A nine-phase simulation framework for building and stress-testing equity portfolios, using five years of daily data for seven US large-caps (2020–2024, 1,221 return observations, 80/20 chronological split). Independent work.
 
-- Tech Stack: Python , pandas, numpy, matplotlib, seaborn.
+- **Simulation engine:** correlated multivariate scenarios via Box–Muller and Marsaglia-polar drivers with Cholesky factorisation, validated against historical moments before use.
+- **Why simulation:** normality is rejected for all seven assets (Jarque–Bera; excess kurtosis up to 14.5) with volatility clustering across the panel, so variance alone is an incomplete risk measure and closed-form tail estimates are unreliable.
+- **Scenario models compared:** multivariate normal, historical bootstrap, and a two-regime stress mixture. Tail behaviour proved strongly model-dependent — the plain MVN model is the least conservative at the 99% level.
+- **Optimisation:** Markowitz mean–variance (SLSQP) benchmarked against Monte Carlo random search with common random numbers. The two agree on max-Sharpe allocations but diverge under a min-CVaR objective, which shifts weight toward defensive names.
+- **Rigour:** convergence diagnostics confirming the 1/√N rate; variance reduction via antithetic variates, control variates and importance sampling (VRF ≈ 2.4–2.7 on 99% tail estimates); estimation risk quantified by bootstrap and Bayesian Gibbs sampling; out-of-sample validation with Kupiec and Christoffersen backtests.
 
+**Tech stack:** Python, NumPy, pandas, SciPy, Matplotlib · Fully reproducible (fixed seed), MIT licensed
 
-### Certifications
-- AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents – [Udemy](https://www.udemy.com/certificate/UC-fa433f70-7544-4ef6-94eb-4af44aa4e370/)
+---
 
-- AWS Certified Machine Learning Specialty 2025 - Hands On! – [Udemy](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/)
+### 4. Healthcare Accessibility in Sudan — Omdena Sudan Chapter
+*Volunteer collaborator, Feb–Mar 2024*
 
-- SQL & Database Design A-Z™: Learn MS SQL Server + PostgreSQL – [Udemy](https://www.udemy.com/certificate/UC-8e25770a-2c19-4d31-bd32-3bab1523ebcd/)
+[Repository](https://github.com/OmdenaAI/SudanChapter_AnalyzeHealthcareAccessibility)
 
+Open-source challenge building a machine learning system to forecast disease outbreaks and map healthcare facility accessibility in Sudan, where healthcare access is severely constrained by conflict and displacement.
 
-### Professional Experience
-- Office Executive | WBSEDCL | 2013 – 2021
+- Data collection and preprocessing of historical and geospatial health datasets — resolving missing values, reconciling inconsistent sources, and building the cleaned feature sets used downstream.
+- Exploratory analysis identifying high-risk disease trends and regional access barriers.
+- The team's logistic regression models were trained on these feature sets and deployed as an interactive web application.
+- Worked asynchronously with a distributed international team via Git/GitHub.
 
-- Online Math Tutor | OnetoOne Tutor India Pvt Ltd | 2010 – 2013
+**Tech stack:** Python, pandas, NumPy, scikit-learn, Matplotlib
 
+---
 
-### Profiles
-[LinkedIn](https://www.linkedin.com/in/satadals/)
+### 5. Gold Price Prediction
+[Repository](https://github.com/SatadalS99/Gold_price_prediction) · [Notebook](https://github.com/SatadalS99/Gold_price_prediction/blob/main/Gold_price_prediction_using_decison_trees.ipynb) · [Streamlit app](https://gold-price-prediction-satadal.streamlit.app/)
 
-[Github](https://github.com/SatadalS99)
+End-to-end regression pipeline predicting gold prices from market and economic indicators. Benchmarked a Random Forest Regressor against Gradient Boosting, reaching **R² = 0.814** on the held-out set. Feature analysis identified Silver (SLV) as the strongest single predictor (r = 0.87).
 
+**Tech stack:** Python, pandas, NumPy, scikit-learn, Matplotlib, Streamlit
 
+---
 
+### 6. German Wholesale & Retail Trade Analysis (2005–2020)
+[Repository](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de) · [Notebook](https://github.com/SatadalS99/Annual_statistics_of_wholesale_and_retail_trade_de/blob/main/src/Economic_Activity_Analysis.ipynb)
+
+Fifteen years of German wholesale and retail trade statistics analysed end to end, from raw ingestion through to structural findings: average sector profitability of 28.69%, a productivity gap of €268 per person (large firms) versus €116 (micro firms), and 27% net market growth since 2005 with investment intensity rising +0.026%/year.
+
+**Tech stack:** Python, pandas, NumPy, Matplotlib, Seaborn, openpyxl
+
+---
+
+## Education
+
+- **M.Sc. Data Science**, TU Dortmund University — 2021–2026 (expected)
+- **Master of Computer Applications (MCA)**, West Bengal University of Technology — 2012
+- **Bachelor of Computer Applications (BCA)**, West Bengal University of Technology — 2009
+
+## Certifications
+
+- [AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents](https://www.udemy.com/certificate/UC-fa433f70-7544-4ef6-94eb-4af44aa4e370/) — Udemy
+- [AWS Certified Machine Learning Specialty 2025 – Hands On!](https://www.udemy.com/certificate/UC-84826733-80a1-4a86-8175-bae4b63b3480/) — Udemy
+- [SQL & Database Design A-Z: MS SQL Server + PostgreSQL](https://www.udemy.com/certificate/UC-8e25770a-2c19-4d31-bd32-3bab1523ebcd/) — Udemy
+
+## Professional Experience
+
+- **Office Executive**, WBSEDCL (state power utility), India — 2013–2021
+  SAP/ERP master data management, MIS reporting, billing and revenue analysis
+- **Online Mathematics Tutor**, 1to1 Tutor, India — 2010–2013
+
+## Languages
+
+English C1 · German B1 · Bengali, Hindi (native/fluent)
