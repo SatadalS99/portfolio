@@ -21,41 +21,43 @@ Eight years' prior experience with SAP/ERP master data and MIS reporting at a st
 
 ## Projects
 
-### 1. Demand Forecasting with DHL Data
-*Team seminar project, Fakultät Statistik, TU Dortmund — Realworld Solution Summit 2026*
+### 1. Weekly Demand Forecasting — Industry Case Study
+*Team seminar project, Fakultät Statistik, TU Dortmund — Real World Solution Summit 2026*
 
-Forecasting weekly parcel volumes for capacity planning at Customer × Product × calendar-week granularity: 20 customers, 2 products, 37 active lines, 4,968 rows of weekly history (2023–2025), forecasting CW 1–16 of 2026.
+Forecasting weekly parcel volumes for capacity planning at Customer × Product × calendar-week granularity, across 37 active customer–product lines over a 16-week horizon.
 
 **My contribution — exploratory analysis and the customer-based modelling approach.**
 
-- EDA established the modelling constraints: demand is highly skewed (mean 4.7M ≫ median 3.2M), concentrated (top 10 lines ≈ 62% of volume), and declining ≈3%/year.
+- EDA established the modelling constraints: demand is highly skewed and concentrated in a small number of high-volume lines, with a mild structural decline over the observation period.
 - Hypothesis testing showed the two product lines are statistically independent within a customer — robust across timescales and after multiple-testing correction — ruling out substitution effects and justifying line-by-line modelling.
-- Built individual series per customer–product combination (40 identified, 37 viable) and evaluated 14 candidate models each — naïve, seasonal, trend, Croston, ARIMA, Holt-Winters, machine learning and robust-shrinkage — for **518 total model runs**.
-- Selection used a 52-week training window with rolling time-based cross-validation over 7 folds and no look-ahead; each chosen model was validated on unseen test data before forecasting.
-- **Result:** per-line model selection cut average forecast error from 2.28 to 1.97 (**≈14% better**) than the best single global rule. Final deliverable: 592-row forecast (37 lines × 16 weeks).
+- Built an individual time series per customer–product line and evaluated a pool of candidate models on each — naïve, seasonal, trend, Croston, ARIMA, Holt-Winters, machine learning and robust shrinkage.
+- Model selection ran on a fixed training window under time-based validation with no look-ahead; each selected model was then validated on unseen test data before forecasting.
+- **Outcome:** per-line model selection outperformed the best single global rule. No model won across the board — volatile and intermittent lines favoured robust and intermittent-demand methods, while stable lines favoured smooth ones.
+- Designed for operational safety: the robust global rule is retained as an automatic fallback if a tailored model destabilises, and high-volatility lines are flagged so account teams can act early.
 
 **Tech stack:** Python, pandas, statsmodels, scikit-learn
 
-> Data and code are confidential under the university/partner agreement. Poster available on request.
+> Conducted under a university–industry partnership. Data, figures and code are not published.
 
 ---
 
-### 2. Customer Segmentation with Picnic Data
-*Team seminar project in cooperation with Picnic Germany, Fakultät Statistik, TU Dortmund — Realworld Solution Summit, SoSe 2026*
+### 2. New-Customer Drop-off Segmentation — Industry Case Study
+*Team seminar project, Fakultät Statistik, TU Dortmund — Real World Solution Summit, SoSe 2026*
 
-Brief covered customer clustering, basket co-purchase analysis and anomaly detection across 2.3M order lines, 19,314 customers and 2,000 articles.
+Brief covered customer clustering, basket co-purchase analysis and anomaly detection on an anonymised retail transaction extract.
 
 **My contribution — new-customer drop-off patterns.**
 
-- The problem: new customers joined and went quiet after one or two orders. Cohort-average weekly deliveries fell 56% from Week 1 to Week 23, but every drop-off received the same generic re-engagement email regardless of behaviour.
-- K-Means clustering (Euclidean) on a 5,722 × 23 weekly-trajectory matrix. Each customer row was **min–max normalised**, so clustering grouped by the *shape* of behaviour over time rather than order volume — without that step segments separate on how much people buy, which the business already knows, instead of on how they disengage.
-- K tested at 3, 4 and 5 against five metrics (Elbow, Silhouette, Davies-Bouldin, Calinski-Harabasz, minimum cluster size); K=3 won on four of five.
-- Three segments separated cleanly in PC1–PC2 space: **70% Never-Activated** (flat from day one), **19% Slow Builders**, **11% Peak-and-Fade** (peaked at Week 9, then declined).
-- **Result:** the Peak-and-Fade cohort are the real drop-offs, and worth **6.5× more per customer** than the Never-Activated group. Each segment has its own identifiable trigger week and appropriate response — so retention spend goes to the 11% who can be won back instead of the 70% who never engaged.
+- The problem: new customers joined and went quiet after one or two orders, but every drop-off received the same generic re-engagement email regardless of behaviour — no early warning, no way to prioritise.
+- K-Means clustering (Euclidean) on a weekly-trajectory matrix: one row per new customer, one column per week of the observation window.
+- Each row was **min–max normalised**, so clustering grouped by the *shape* of behaviour over time rather than by order volume. Without that step, segments separate on how much people buy — which the business already knows — instead of on how they disengage, which is the actionable signal.
+- Candidate values of K compared against five criteria (Elbow, Silhouette, Davies–Bouldin, Calinski–Harabasz, minimum cluster size); the selected K won on four of the five.
+- Segments projected onto the first two principal components to verify separation.
+- **Outcome:** the clustering resolved a single declining average into distinct behavioural archetypes — never activated, gradually building, and peak-then-fade. Each has its own identifiable trigger week and its own appropriate response, replacing the one-size-fits-all email and letting retention spend go where it can actually be recovered.
 
 **Tech stack:** Python, pandas, scikit-learn, PCA
 
-> Data confidential under the university/partner agreement.
+> Conducted under a university–industry partnership. Data, figures and code are not published.
 
 ---
 
